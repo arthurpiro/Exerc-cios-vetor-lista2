@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int main() {
@@ -6,6 +5,7 @@ int main() {
     float notas[4];
     float contador;
     float media;
+    float soma;
 
 
     for(contador=1; contador <= 4; contador ++){
@@ -13,12 +13,10 @@ int main() {
         scanf("%f", &notas[4]);
       } 
 
-     media= contador/4;
-         printf("%f""A sua media de notas é iqual a: ",media);
-  
-        
-    
-   
-    return 0;
-  }
+     soma= soma+ notas[4];
 
+     media= contador/4;
+         printf("%f""A  media de suas notas é iqual a: ",media);
+  
+        return 0;
+  }
