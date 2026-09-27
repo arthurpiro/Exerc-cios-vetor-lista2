@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+    int numero;
+    int frequencia;
+    int inte;
+    int number;
+
+    for(inte=0; inte<=100; inte++){
+        frequencia[inte] = 0;
+    }
+
+    for(inte=0; inte<10; inte++){
+        printf("Digite o %d. numero: ", inte + 1);
+        scanf("%d", &numero[inte]);
+    }
+
+    for(inte=0; inte<10; inte++){
+        number = numero[inte];
+        frequencia[number] = frequencia[number] + 1;
+    }
+
+    for(inte=0; inte<=100; inte++){
+        if(frequencia[inte] > 0){
+            printf("O numero %d aparece %d vez(es)\n", inte, frequencia[inte]);
+        }
+    }
+
+    return 0;
+}
